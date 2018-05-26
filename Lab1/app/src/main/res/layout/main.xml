@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kate.test.MainActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_width="fill_parent"
+            android:gravity="center">
+        <TextView android:id="@+id/selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/makeSelect"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#154"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:layout_width="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SelectCours"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radiogrpCours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#f07a7a"
+                />
+            <RadioButton android:id="@+id/p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="#f07a7a"
+                />
+            <RadioButton android:id="@+id/p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="#f07a7a"
+                />
+            <RadioButton android:id="@+id/p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textColor="#f07a7a"
+                />
+            <RadioButton android:id="@+id/p5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="#f07a7a"
+               />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:layout_width="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оберіть факультет!"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radiogrpFaculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="30">
+
+            <RadioButton android:id="@+id/irenebukur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ФІОТ"
+                android:textColor="#0b91d9"
+                />
+            <RadioButton android:id="@+id/belnatur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ФПМ"
+                android:textColor="#0b91d9"
+                />
+            <RadioButton android:id="@+id/guam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ФАКС"
+                android:textColor="#0b91d9"
+                />
+            <RadioButton android:id="@+id/danne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ФБІ"
+                android:textColor="#0b91d9"/>
+        </RadioGroup>
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OK"
+                android:textStyle="bold"
+                android:background="#377303"
+                android:textColor="#fcfcfc"/>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textStyle="bold"
+                android:background="#9ea7a8"
+                android:textColor="#fcfcfc"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

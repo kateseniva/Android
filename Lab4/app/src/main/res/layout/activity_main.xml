@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kate.newlab4.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="360dp"
+
+        android:src="@drawable/pr_source" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f0f4"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        >
+
+        <Button
+            android:id="@+id/audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2A0A29"
+            android:text="@string/music"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:onClick="clickAudio">
+
+        </Button>
+
+        <Button
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2A0A29"
+            android:text="@string/video"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:onClick="clickVideo">
+
+        </Button>
+
+		
+    </LinearLayout>
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

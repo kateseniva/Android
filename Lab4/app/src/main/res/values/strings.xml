@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NewLab4</string>
+    <string name="music">Музика</string>
+    <string name="video">Відео</string>
+    <string name="song">I need a hero - Bonnie Tyler</string>
+    <string name="film">Море</string>
+    <string name="filmInternet">Відео інтернет-ресурсу</string>
+
+</resources>

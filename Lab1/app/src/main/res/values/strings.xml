@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Лаб1 Сеніва К.</string>
+    <string name="SelectCours">Оберіть курс!</string>
+    <string name="madeSelect">%1$s факультету %2$s ваш вибір</string>
+    <string name="makeSelect">Зробіть, будь ласка, свій вибір!</string>
+    <string name="Choose">Choose</string>
+
+</resources>

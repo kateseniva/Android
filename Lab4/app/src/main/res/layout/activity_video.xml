@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#f4f0f4"
+            android:gravity="center_horizontal"
+            android:text="@string/film"
+            android:textColor="#6A0888"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <VideoView
+            android:id="@+id/videoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+			
+			<Button
+            android:id="@+id/Internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2A0A29"
+            android:text="@string/filmInternet"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:onClick="Internet">
+
+        </Button>
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
